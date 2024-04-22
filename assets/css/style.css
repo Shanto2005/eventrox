@@ -1,0 +1,414 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../web-fonts/Ubuntu-Bold.woff2") format("woff2"), url("../web-fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../web-fonts/Ubuntu-Medium.woff2") format("woff2"), url("../web-fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../web-fonts/Ubuntu-Regular.woff2") format("woff2"), url("../web-fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../web-fonts/Poppins-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-Medium.woff2") format("woff2"), url("../web-fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-Bold.woff2") format("woff2"), url("../web-fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-Regular.woff2") format("woff2"), url("../web-fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-SemiBold.woff2") format("woff2"), url("../web-fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+html {
+  scrollbar-color: #c8102e #ddd;
+  scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+  width: 0.5vw;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #c8102e;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+html::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 600;
+  font-family: "Ubuntu";
+  color: #1e1f36;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #888888;
+  background-color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  h1,
+  .h1 {
+    font-size: 150px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 576px) {
+  h2,
+  .h2 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h2,
+  .h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  h2,
+  .h2 {
+    font-size: 48px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+@media only screen and (min-width: 768px) {
+  h3,
+  .h3 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  h3,
+  .h3 {
+    font-size: 45px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  h4,
+  .h4 {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h4,
+  .h4 {
+    font-size: 20px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) {
+  h5,
+  .h5 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+}
+@media only screen and (min-width: 992px) {
+  h6,
+  .h6 {
+    font-size: 18px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=submit],
+[type=number],
+[type=file],
+textarea,
+select {
+  border: 1px solid #3d5779;
+  padding: 25px 15px;
+  margin-bottom: 12px;
+  width: 100%;
+  border-radius: 0px;
+  height: 42px;
+  background-color: #fff;
+  color: #0d1931;
+  outline-offset: 0px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #888888;
+}
+@media only screen and (min-width: 1200px) {
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  input[type=url],
+  input[type=search],
+  input[type=submit],
+  [type=number],
+  [type=file],
+  textarea,
+  select {
+    font-size: 17px;
+  }
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=submit]::-moz-placeholder, [type=number]::-moz-placeholder, [type=file]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  font-size: 14px;
+  color: #222222;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=tel]::placeholder,
+input[type=url]::placeholder,
+input[type=search]::placeholder,
+input[type=submit]::placeholder,
+[type=number]::placeholder,
+[type=file]::placeholder,
+textarea::placeholder,
+select::placeholder {
+  font-size: 14px;
+  color: #222222;
+}
+@media only screen and (min-width: 1200px) {
+  input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=submit]::-moz-placeholder, [type=number]::-moz-placeholder, [type=file]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    font-size: 14px;
+  }
+  input[type=text]::placeholder,
+  input[type=email]::placeholder,
+  input[type=password]::placeholder,
+  input[type=tel]::placeholder,
+  input[type=url]::placeholder,
+  input[type=search]::placeholder,
+  input[type=submit]::placeholder,
+  [type=number]::placeholder,
+  [type=file]::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    font-size: 14px;
+  }
+}
+
+input[type=submit],
+input[type=button],
+button,
+.button {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: unset;
+  transition: 0.4s all;
+  padding: 5px 8px;
+  border: 1 solid;
+  background-color: #F20487;
+  color: #fff;
+}
+
+p,
+ul,
+ol,
+table,
+address {
+  margin-bottom: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.mainBtns {
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  position: relative;
+  background-color: #F20487;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+.mainBtns::before {
+  transition: 0.3s;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mainBtns:hover .btn_text {
+  color: #F20487;
+}
+.mainBtns:hover::before {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+.mainBtns .btn_text {
+  position: relative;
+  color: #fff;
+}
+
+header .header_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerlogoBox {
+  width: 20%;
+}
+header .headerlogoBox img {
+  max-width: 200px;
+}
+header .headerMenuBox {
+  width: 80%;
+}
+header .mmenu_box {
+  display: block;
+}
+@media only screen and (min-width: 992px) {
+  header .mmenu_box {
+    display: none;
+  }
+}
+header .dmnenu_box {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  header .dmnenu_box {
+    display: block;
+  }
+}
+header .dmnenu_box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+header .dmnenu_box li:not(:first-child) {
+  margin-left: 10px;
+}
+header .dmnenu_box a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3f4161;
+  text-decoration: none;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+header .dmnenu_box a::before {
+  content: "";
+  position: absolute;
+  transition: 0.5s all ease;
+  top: 90%;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  background: linear-gradient(90deg, rgb(242, 4, 135) 0%, rgb(76, 53, 169) 100%);
+  z-index: -1;
+}
+header .dmnenu_box a:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

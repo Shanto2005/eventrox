@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../web-fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../web-fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../web-fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('../web-fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../web-fonts/Ubuntu-Regular.woff2') format('woff2'),
+        url('../web-fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../web-fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../web-fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../web-fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../web-fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../web-fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../web-fonts/Poppins-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../web-fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../web-fonts/Poppins-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../web-fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../web-fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+
+
+
+
+
+
+@mixin minwidth($width){
+	@media only screen and (min-width: $width){
+		@content;
+	}
+}
+@mixin maxwidth($width){
+	@media only screen and (max-width: $width){
+		@content;
+	}
+}
+
+html{
+    scrollbar-color: #c8102e #ddd;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar{
+        width: 0.5vw;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #c8102e;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        background-clip: content-box;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #ddd;
+    }
+}
+$primaryFont: 'Open Sans';
+$white: #fff;
+$pink: #F20487;
+$purple: #4C35A9;
+$purple2: #3f4161;
+$textColor: #888888;
+$headingColor: #1e1f36;
+
+
+
+
+$allHeading: 'h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6';
+#{$allHeading} {
+    font-weight: 600;
+    font-family: "Ubuntu";
+    color: $headingColor;
+}
+body{
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: $textColor;
+    background-color: $white;
+    @include minwidth(768px){
+        font-size: 16px;
+    }
+
+}
+h1,
+.h1 {
+    font-size: 45px;
+    font-weight: 700;
+    @include minwidth(768px) {
+        font-size: 80px;
+    }
+    @include minwidth(1400px) {
+        font-size: 150px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 22px;
+    font-weight: 700;
+    @include minwidth(576px) {
+        font-size: 25px;
+    }
+    @include minwidth(992px) {
+        font-size: 40px;
+    }
+    @include minwidth(1400px){
+        font-size: 48px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 25px;
+    font-weight: 800;
+    @include minwidth(768px) {
+        font-size: 32px;
+    }
+    @include minwidth(1400px) {
+        font-size: 45px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 16px;
+    @include minwidth(768px){
+        font-size: 16px;
+    }
+    @include minwidth(1200px){
+        font-size:20px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 16px;
+    font-weight: 500;
+    @include minwidth(768px){
+        font-size: 18px;
+    }
+    @include minwidth(1200px){
+        font-size: 20px;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+    @include minwidth(992px) {
+        font-size: 18px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=submit],
+[type=number],
+[type=file],
+textarea,
+select {
+    border: 1px solid #3d5779;
+    padding: 25px 15px;
+    margin-bottom: 12px;
+    width: 100%;
+    border-radius: 0px;
+    height: 42px;
+    background-color: $white;
+    color: #0d1931;
+    outline-offset: 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: $textColor;
+    @include minwidth(1200px) {
+        font-size: 17px;
+    }
+    // &:focus {
+    //     border: 1px solid $blue_3;
+    // }
+    &::placeholder {
+        font-size: 14px;
+        color: #222222;
+        @include minwidth(1200px) {
+            font-size: 14px;
+        }
+    }
+}
+
+input[type=submit],
+input[type=button],
+button,
+.button {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: unset;
+    transition: 0.4s all;
+    padding: 5px 8px;
+    border: 1 solid;
+    background-color: $pink;
+    color: $white;
+    // &:hover{
+    //     background-color: $primaryColor;
+    // }
+}
+
+
+
+p,
+ul,
+ol,
+table,
+address {
+    margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.container{
+    @include minwidth(1600px){
+        max-width: 1320px;
+    }
+}
+
+.mainBtns{
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    position: relative;
+    background-color: #F20487;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    &::before{
+      transition: 0.3s;
+      content: '';
+      width: 0%;
+      height: 100%;
+      background: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:hover{
+        .btn_text{
+            color: $pink;
+        }
+        &::before{
+            background: $white;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .btn_text{
+        position: relative;
+        color: $white;
+    }
+}
+  
+$primary:#FF0072;
+$second:#644cad;
+$third:#4426a8;
+header{
+    .header_content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerlogoBox{
+        width: 20%;
+        img{
+            max-width: 200px;
+        }
+    }
+    .headerMenuBox{
+        width: 80%;
+    }
+    .mmenu_box{
+        display: block;
+        @include minwidth(992px){
+            display: none;
+        }
+    }
+    .dmnenu_box{
+        display: none;
+        @include minwidth(992px){
+            display: block;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-items: center;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        li{
+            &:not(:first-child){
+                margin-left: 10px;
+            }
+        }
+        a{
+            font-size:16px;
+            font-weight: 500;
+            color: $purple2;
+            text-decoration: none;
+            display:inline-block;
+            width:fit-content;
+            position:relative;
+            z-index:2;
+            &::before {
+                content:'';
+                position:absolute;
+                -webkit-transition:0.5s all ease;
+                transition:0.5s all ease;
+                top:90%;
+                left:50%;
+                right:50%;
+                bottom:0;
+                opacity:0;
+                background: linear-gradient(90deg, rgba(242,4,135,1) 0%, rgba(76,53,169,1) 100%);
+                z-index:-1;
+            }
+            &:hover {
+                &:before {
+                    -webkit-transition:0.5s all ease;
+                    transition:0.5s all ease;
+                    left:0;
+                    right:0;
+                    opacity:1;
+                }
+            }
+        }
+    }
+}
+
