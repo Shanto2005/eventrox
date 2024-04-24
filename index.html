@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/mmenu-light.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/mmenu-light.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -34,9 +34,11 @@
                             <li class="flex dark"><a class="bttn-dark" href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="ssBtn d-none d-sm-block d-lg-none ms-3">
-                        <a href="#" class="open_search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <button class="mainBtns ms-3">
+                    <button type="button open_search" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="ssBtn d-none d-sm-block d-lg-none ms-0">
+                        <button class="mainBtns ms-0">
                             <span class="btn_text">Get Tickets</span>
                         </button>
                     </div>
@@ -50,7 +52,9 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <div class="ssBtn">
-                            <a href="#" class="open_search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <button type="button open_search" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                             <button class="mainBtns">
                                 <span class="btn_text">Get Tickets</span>
                             </button>
@@ -64,17 +68,33 @@
 
 <!-- headerSearchModal -->
 
-<!-- <div class="headerSearchModal">
-        <div class="search_block">
-            <div class="search_box">
-              <div class="inner">
-                <input type="text" name="search" id="search" class="search_input" autocomplete="off" placeholder="Search" />
-                <button class="search_icon glyphicon glyphicon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
+<div class="headerSearchModal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="overlayer"></div>
-          </div>      
-    </div> -->
+            <div class="modal-body">
+                <div class="search_block">
+                    <div class="search_box">
+                      <div class="inner">
+                        <input type="text" name="search" id="search" class="search_input" autocomplete="off" placeholder="Search" />
+                        <button class="search_icon glyphicon glyphicon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+                    </div>
+                </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+
 
 <div class="bannerSection" style="background-image: url('assets/images/9.jpg');">
     <div class="container">
@@ -1191,6 +1211,113 @@
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="container">
+        <div class="footerContent">
+            <div class="footerHolder compDescrip">
+                <div class="footerCOntentTittle">
+                    <a href="index.html">
+                        <img src="assets/images/footerlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="footerInnerCOntent">
+                    <p>We have very good strength in innovative technology and tools with over 35 years of experience. We makes long-term investments goal in global companies in different sectors, mainly in Europe and other countries.</p>
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="pinterest" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a class="slype" href="#"><i class="fa-brands fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerHolder useFullLink">
+                <div class="footerCOntentTittle">
+                    <h4 class="h4">Useful Links</h4>
+                </div>
+                <div class="footerInnerCOntent">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerHolder contactUs">
+                <div class="footerCOntentTittle">
+                    <h4 class="h4">Contact Us</h4>
+                </div>
+                <div class="footerInnerCOntent">
+                    <ul>
+                        <li>Mon - Fri: 09:00 - 18:00</li>
+                        <li><a href="#">+1-345-5678-77</a></li>
+                        <li><a href="#">support@example.com</a></li>
+                        <li>13005 Greenville Avenue California, TX 70240</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerHolder insGallery">
+                <div class="footerCOntentTittle">
+                    <h4 class="h4">Instagram Gallery</h4>
+                </div>
+                <div class="footerInnerCOntent">
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="assets/images/gw-1.jpg" alt="">
+                        </a>
+                        <div class="overlayer">
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="assets/images/gw-2.jpg" alt="">
+                        </a>
+                        <div class="overlayer">
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="assets/images/gw-3.jpg" alt="">
+                        </a>
+                        <div class="overlayer">
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="assets/images/gw-4.jpg" alt="">
+                        </a>
+                        <div class="overlayer">
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="assets/images/gw-5.jpg" alt="">
+                        </a>
+                        <div class="overlayer">
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="assets/images/gw-6.jpg" alt="">
+                        </a>
+                        <div class="overlayer">
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
     <!-- <button class="mainBtns">
