@@ -42,6 +42,36 @@ $('.open_search').on('click', function(event){
 
 
 
+
+const tabButtons = document.querySelectorAll('.tab-btn')
+
+tabButtons.forEach((tab) => {
+  tab.addEventListener('click', () => tabClicked(tab))
+})
+
+function tabClicked(tab) {
+  
+  tabButtons.forEach(tab => {
+    tab.classList.remove('active')
+  })
+  tab.classList.add('active')
+  
+  const contents = document.querySelectorAll('.content')
+  
+  contents.forEach((content) => {
+    content.classList.remove('show')
+  })
+  
+  const contentId = tab.getAttribute('content-id')
+  const contentSelected = document.getElementById(contentId)
+  
+  contentSelected.classList.add('show')
+  //console.log(contentId)
+}
+
+
+
+
 (function () {
     const second = 1000,
           minute = second * 60,
@@ -84,4 +114,47 @@ $('.open_search').on('click', function(event){
           }
           //seconds
         }, 0)
-    }());
+}());
+
+
+
+$('.gallerySlide').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });

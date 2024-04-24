@@ -14,452 +14,1200 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-    <header>
-        <div class="container">
-            <div class="header_content">
-                <div class="headerlogoBox">
-                    <a href="index.html"><img src="assets/images/headerLogo.png" alt=""></a>
+<header>
+    <div class="container">
+        <div class="header_content">
+            <div class="headerlogoBox">
+                <a href="index.html"><img src="assets/images/headerLogo.png" alt=""></a>
+            </div>
+            <div class="headerMenuBox">
+                <div class="mmenu_box d-flex d-lg-none">
+                    <a href="#mntk_mmenu" class="mmenuButton fs-3" style="color: #fff;"><i
+                            class="fa-solid fa-bars"></i></a>
+                    <nav id="mntk_mmenu">
+                        <ul>
+                            <li class="flex dark"><a class="bttn-dark" href="index.html">Home</a></li>
+                            <li class="flex dark"><a class="bttn-dark" href="#">About</a></li>
+                            <li class="flex dark"><a class="bttn-dark" href="#">Speakers</a></li>
+                            <li class="flex dark"><a class="bttn-dark" href="#">Speakers</a></li>
+                            <li class="flex dark"><a class="bttn-dark" href="#">Blog</a></li>
+                            <li class="flex dark"><a class="bttn-dark" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="ssBtn d-none d-sm-block d-lg-none ms-3">
+                        <a href="#" class="open_search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <button class="mainBtns ms-3">
+                            <span class="btn_text">Get Tickets</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="headerMenuBox">
-                    <div class="mmenu_box d-flex d-lg-none">
-                        <a  href="#mntk_mmenu" class="mmenuButton fs-3" style="color: #fff;"><i class="fa-solid fa-bars"></i></a>
-                        <nav id="mntk_mmenu">
-                            <ul>
-                                <li class="flex dark"><a class="bttn-dark" href="index.html">Home</a></li>
-                                <li class="flex dark"><a class="bttn-dark" href="#">About</a></li>
-                                <li class="flex dark"><a class="bttn-dark" href="#">Speakers</a></li>
-                                <li class="flex dark"><a class="bttn-dark" href="#">Speakers</a></li>
-                                <li class="flex dark"><a class="bttn-dark" href="#">Blog</a></li>
-                                <li class="flex dark"><a class="bttn-dark" href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="ssBtn d-none d-sm-block d-lg-none ms-3">
+                <div class="dmnenu_box">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="ssBtn">
                             <a href="#" class="open_search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                            <button class="mainBtns ms-3">
+                            <button class="mainBtns">
                                 <span class="btn_text">Get Tickets</span>
                             </button>
                         </div>
-                    </div>                    
-                    <div class="dmnenu_box">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Speakers</a></li>
-                            <li><a href="#">Speakers</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <div class="ssBtn">
-                                <a href="#" class="open_search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- headerSearchModal -->
+
+<!-- <div class="headerSearchModal">
+        <div class="search_block">
+            <div class="search_box">
+              <div class="inner">
+                <input type="text" name="search" id="search" class="search_input" autocomplete="off" placeholder="Search" />
+                <button class="search_icon glyphicon glyphicon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+            <div class="overlayer"></div>
+          </div>      
+    </div> -->
+
+<div class="bannerSection" style="background-image: url('assets/images/9.jpg');">
+    <div class="container">
+        <div class="bannerContennt">
+            <div class="meetAddress">
+                <p><i class="fa-solid fa-location-dot"></i> Pearl Hotel, New York, USA</p>
+            </div>
+            <div class="bannerTittle">
+                <h1>Digital Agency <br> Thinkers Meet Up</h1>
+            </div>
+            <div class="bannerCountdown" id="countdown">
+                <ul>
+                    <li><span id="days"></span>days</li>
+                    <li><span id="hours"></span>Hours</li>
+                    <li><span id="minutes"></span>Minutes</li>
+                    <li><span id="seconds"></span>Seconds</li>
+                </ul>
+            </div>
+            <div class="bannerBtn">
+                <button class="mainBtns">
+                    <span class="btn_text">Get Tickets</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="meetWel">
+    <div class="container">
+        <div class="welcomConent">
+            <div class="welImg">
+                <figure>
+                    <img src="assets/images/aboutMeet.jpg" alt="">
+                </figure>
+            </div>
+            <div class="welTextContent">
+                <div class="welSubt">
+                    <p class="subTittle">ABOUT MEETUP</p>
+                </div>
+                <div class="welTittle">
+                    <h2 class="h2">Welcome to the World Digital Meetup 2023</h2>
+                </div>
+                <div class="welPra">
+                    <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt labore et dolore magna aliqua
+                        enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
+                        consequat.</p>
+                </div>
+                <div class="welMeetAdd d-flex justify-start column-gap-5">
+                    <div class="whereMeet">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-location-dot"></i>Where</p>
+                        <p>Pearl Hotel, New York, USA</p>
+                    </div>
+                    <div class="whenMeet">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-clock"></i>When</p>
+                        <p>January 20, 2023 09:00 AM</p>
+                    </div>
+                </div>
+                <div class="welRegBtn">
+                    <button class="mainBtns">
+                        <span class="btn_text">Registration Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feature">
+    <div class="container">
+        <div class="featureContent">
+            <div class="featureHoldedr Speakers">
+                <div class="featureIcon">
+                    <span><img src="assets/images/lecture.png" alt=""></span>
+                </div>
+                <div class="featureInnerContent">
+                    <p><strong>Great Speakers</strong></p>
+                    <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
+                </div>
+                <div class="featureBtn">
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="featureHoldedr Experience">
+                <div class="featureIcon">
+                    <span><img src="assets/images/lecture.png" alt=""></span>
+                </div>
+                <div class="featureInnerContent">
+                    <p><strong>Experience</strong></p>
+                    <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
+                </div>
+                <div class="featureBtn">
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="featureHoldedr Networking">
+                <div class="featureIcon">
+                    <span><img src="assets/images/lecture.png" alt=""></span>
+                </div>
+                <div class="featureInnerContent">
+                    <p><strong>Networking</strong></p>
+                    <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
+                </div>
+                <div class="featureBtn">
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="featureHoldedr Party">
+                <div class="featureIcon">
+                    <span><img src="assets/images/lecture.png" alt=""></span>
+                </div>
+                <div class="featureInnerContent">
+                    <p><strong>Party</strong></p>
+                    <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
+                </div>
+                <div class="featureBtn">
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layoutSec">
+    <div class="layoutParent layout">
+        <div class="Imglayout layout"></div>
+        <div class="Contentlayout">
+            <h2 class="h2">Modern Marketing Summit Sydney 2018</h2>
+            <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt labore et dolore magna aliqua enim ad
+                minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat</p>
+            <button class="mainBtns">
+                <span class="btn_text">Get Tickets</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="todayPer">
+    <div class="container">
+        <div class="perHeader">
+            <p class="subTittle">SPEAKERS</p>
+            <h2>Todays Performers</h2>
+        </div>
+        <div class="perContent">
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-1.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Dale Marke</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-2.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Natisha Decoux</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-3.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Adolfo Plahs</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-4.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Mitchell Hegg</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-5.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Kenyetta Lesley</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-6.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Shelly Verghese</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-7.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Kenyetta Lesley</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perHolder">
+                <div class="imgBox">
+                    <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-8.jpg" alt=""></a>
+                </div>
+                <div class="speakerInfo">
+                    <p><strong>Shelly Verghese</strong></p>
+                    <p>Event Manager</p>
+                </div>
+                <div class="speakerLink">
+                    <ul class="linkList">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="SchedulePlan">
+    <div class="container">
+        <div class="SchedulePlanHeading text-center">
+            <p class="subTittle">ABOUT CONFERENCE</p>
+            <h2 class="h2">Schedule Plan</h2>
+        </div>
+        <div class="ScheduleContent">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active ScheduleBtn" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                        <div class="day"><span>Day 1</span></div>
+                        <div class="DateBox">
+                            <p><strong>01</strong></p>
+                            <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link ScheduleBtn lightGrn" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">
+                        <div class="day"><span>Day 2</span></div>
+                        <div class="DateBox">
+                            <p><strong>02</strong></p>
+                            <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link ScheduleBtn purple" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">
+                        <div class="day"><span>Day 3</span></div>
+                        <div class="DateBox">
+                            <p><strong>03</strong></p>
+                            <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link ScheduleBtn pink" id="pills-four-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four"
+                        aria-selected="false">
+                        <div class="day"><span>Day 4</span></div>
+                        <div class="DateBox">
+                            <p><strong>04</strong></p>
+                            <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane tabContentParent fade show active yelloContent" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="contentBox">
+                        <div class="innerBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
                                 <button class="mainBtns">
-                                    <span class="btn_text">Get Tickets</span>
+                                    <span class="btn_text">Read More</span>
                                 </button>
                             </div>
-                        </ul>
+                        </div>
+                        <div class="innerBox lightGntBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox purpleBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox pinkBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane tabContentParent fade lightContent" id="pills-profile" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="contentBox">
+                        <div class="innerBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox lightGntBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox purpleBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox pinkBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane tabContentParent fade purpleContent" id="pills-contact" role="tabpanel"
+                    aria-labelledby="pills-contact-tab" tabindex="0">
+                    <div class="contentBox">
+                        <div class="innerBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox lightGntBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox purpleBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox pinkBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane tabContentParent fade pinkCOntent" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab"
+                    tabindex="0">
+                    <div class="contentBox">
+                        <div class="innerBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox lightGntBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox purpleBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="innerBox pinkBox">
+                            <figure class="d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                </div>
+                                <div class="speakerinfo ms-2">
+                                    <div class="name"><strong>Ashli Scroggy</strong></div>
+                                    <div class="designation">
+                                        <p class="mb-0">Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h4 class="h4">
+                                <a href="#">Modern Marketing Summit Sydney 2018</a>
+                            </h4>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                    labore et</p>
+                            </div>
+                            <div class="redMoreBtn">
+                                <button class="mainBtns">
+                                    <span class="btn_text">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="accrodianSection">
+    <div class="container">
+        <div class="accHeader">
+            <p class="subTittle">FAQ'S</p>
+            <h2 class="h2">General Questions</h2>
+        </div>
+        <div class="accrodainContentParent">
+            <div class="accrodianContent accrodianContentLeft">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Cohousing?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore
+                                dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Can we change the design?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore
+                                dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How is the privacy issues?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore
+                                dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accrodianContent accrodianContentRight">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseRightOne" aria-expanded="true"
+                                aria-controls="collapseRightOne">
+                                What is Cohousing?
+                            </button>
+                        </h2>
+                        <div id="collapseRightOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore
+                                dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseRightTwo" aria-expanded="false"
+                                aria-controls="collapseRightTwo">
+                                Can we change the design?
+                            </button>
+                        </h2>
+                        <div id="collapseRightTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore
+                                dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseRightThree" aria-expanded="false"
+                                aria-controls="collapseRightThree">
+                                How is the privacy issues?
+                            </button>
+                        </h2>
+                        <div id="collapseRightThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore
+                                dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <!-- headerSearchModal -->
-
-    <!-- <div class="search_block">
-      <div class="search_box">
-        <div class="inner">
-          <input type="text" name="search" id="search" class="search_input" autocomplete="off" placeholder="Search" />
-          <button class="search_icon glyphicon glyphicon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+<section class="evenetroxApp">
+    <div class="container">
+        <div class="appContent">
+            <div class="appTextContent order-2 order-mg-1">
+                <div class="appHeader">
+                    <p class="subTittle">app download</p>
+                    <h2>Eventrox App</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="imgBox d-flex column-gap-3">
+                    <a href="#">
+                        <img src="assets/images/google-play.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/app-store.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="appImgContent order-1 order-md-2">
+                <img src="assets/images/app-mockup.png" alt="">
+            </div>
         </div>
-      </div>
-      <div class="overlayer"></div>
-    </div> -->
+    </div>
+</section>
 
+<section class="eventHallDerac">
+    <div class="container">
+        <div class="deh_content">
+            <div class="deh_map order-2 order-lg-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.927911881727!2d90.3654215!3d23.7747523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1713956847450!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            </div>
+            <div class="deh_tab order-1 order-lg-2">
+                <div class="dehHeader">
+                    <p class="subTittle">REACH US</p>
+                    <h2>Direction for the Event hall</h2>
+                </div>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" content-id="time">
+                      Time
+                    </button>
+                    <button class="tab-btn" content-id="vanue">
+                      Venue
+                    </button>
+                    <button class="tab-btn" content-id="howto">
+                      How to
+                    </button>
+                </div>
+                <div class="tab-contents">
+                    <div class="content show" id="time">
+                      <div class="content-info">
+                        <h4 class="content-title">
+                            <i class="fa-regular fa-calendar"></i>January 20, 2023
+                        </h4>
+                        <p>9.00 AM - 04.00 PM</p>
+                        <ul class="userInfo">
+                            <li>Dianne Ameter</li>
+                            <li><a href="#">+123 456 7890</a></li>
+                            <li><a href="#">sopport@Eventrox.com</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="content" id="vanue">
+                      <div class="content-info">
+                        <h4 class="content-title">
+                            <i class="fa-solid fa-location-dot"></i>Pearl hotel, New york, USA
+                        </h4>
+                        <p class="content-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content" id="howto">
+                      <div class="content-info">
+                        <h4 class="content-title">
+                            <i class="fa-solid fa-diamond-turn-right"></i> How to get there
+                        </h4>
+                        <p class="content-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </di>
+</section>
 
-    <div class="bannerSection" style="background-image: url('assets/images/9.jpg');">
-        <div class="container">
-            <div class="bannerContennt">
-                <div class="meetAddress">
-                    <p><i class="fa-solid fa-location-dot"></i> Pearl Hotel, New York, USA</p>
+<section class="conferanceBg">
+    <div class="container">
+        <div class="bgCOntent text-center">
+            <div class="subtittle">
+                <p>WE’RE A LEADING MEETUP COMPANY</p>
+            </div>
+            <div class="tittle">
+                <h2 class="h2">We Are Always at The Forefront <br> of The Business Conference !</h2>
+            </div>
+            <div class="bgBtn">
+                <button class="mainBtns">
+                    <span class="btn_text">Contact Us</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tickerChoos">
+    <div class="container">
+        <div class="tikcetHeader text-center">
+            <p class="subTittle">Get Ticket</p>
+            <h2>Choose a Ticket</h2>
+        </div>
+        <div class="ticketContemt">
+            <div class="ticletHolder text-center">
+                <div class="ticketName">
+                    <p>parson</p>
                 </div>
-                <div class="bannerTittle">
-                    <h1>Digital Agency <br> Thinkers Meet Up</h1>
+                <div class="ticketPrice">
+                    <p>$19</p>
                 </div>
-                <div class="bannerCountdown" id="countdown">
-                    <ul>
-                      <li><span id="days"></span>days</li>
-                      <li><span id="hours"></span>Hours</li>
-                      <li><span id="minutes"></span>Minutes</li>
-                      <li><span id="seconds"></span>Seconds</li>
-                    </ul>
-                  </div>
-                <div class="bannerBtn">
+                <div class="ticketPackeg">
+                    <p>01 Conference Tickets</p>
+                    <p>Free Lunch And Coffee</p>
+                    <p>Certificate</p>
+                </div>
+                <div class="ticketBuyBtn">
+                    <button class="mainBtns">
+                        <span class="btn_text">Get Tickets</span>
+                    </button>
+                </div>
+            </div>
+            <div class="ticletHolder text-center">
+                <div class="ticketName">
+                    <p>family</p>
+                </div>
+                <div class="ticketPrice">
+                    <p>$59</p>
+                </div>
+                <div class="ticketPackeg">
+                    <p>05 Conference Tickets</p>
+                    <p>Free Lunch And Coffee</p>
+                    <p>Certificate</p>
+                </div>
+                <div class="ticketBuyBtn">
+                    <button class="mainBtns">
+                        <span class="btn_text">Get Tickets</span>
+                    </button>
+                </div>
+            </div>
+            <div class="ticletHolder text-center">
+                <div class="ticketName">
+                    <p>group</p>
+                </div>
+                <div class="ticketPrice">
+                    <p>$99</p>
+                </div>
+                <div class="ticketPackeg">
+                    <p>10 Conference Tickets</p>
+                    <p>Free Lunch And Coffee</p>
+                    <p>Certificate</p>
+                </div>
+                <div class="ticketBuyBtn">
                     <button class="mainBtns">
                         <span class="btn_text">Get Tickets</span>
                     </button>
                 </div>
             </div>
         </div>
+        <div class="dotCircle">
+            <img src="assets/images/icon-line-1.png" alt="">
+        </div>
+        <div class="dotBox">
+            <img src="assets/images/icon-dots (1).png" alt="">
+        </div>
     </div>
+        <div class="fullCircle">
+            <img src="assets/images/icon-circle-1.png" alt="">
+        </div>
+</section>
 
-    <section class="meetWel">
-        <div class="container">
-            <div class="welcomConent">
-                <div class="welImg">
-                    <figure>
-                        <img src="assets/images/aboutMeet.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="welTextContent">
-                    <div class="welSubt">
-                        <p class="subTittle">ABOUT MEETUP</p>
-                    </div>
-                    <div class="welTittle">
-                        <h2 class="h2">Welcome to the World Digital Meetup 2023</h2>
-                    </div>
-                    <div class="welPra">
-                        <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.</p>
-                    </div>
-                    <div class="welMeetAdd d-flex justify-start column-gap-5">
-                        <div class="whereMeet">
-                            <p class="d-flex align-items-center"><i class="fa-solid fa-location-dot"></i>Where</p>
-                            <p>Pearl Hotel, New York, USA</p>
-                        </div>
-                        <div class="whenMeet">
-                            <p class="d-flex align-items-center"><i class="fa-solid fa-clock"></i>When</p>
-                            <p>January 20, 2023 09:00 AM</p>
-                        </div>
-                    </div>
-                    <div class="welRegBtn">
-                        <button class="mainBtns">
-                            <span class="btn_text">Registration Now</span>
-                        </button>
-                    </div>
-                </div>
+<section class="conferanceGallery">
+    <div class="gallerySlide">
+        <div class="imgBOx">
+            <img src="assets/images/1.jpg" alt="">
+            <div class="overlayer">
+                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
             </div>
         </div>
-    </section>
-
-    <section class="feature">
-        <div class="container">
-            <div class="featureContent">
-                <div class="featureHoldedr Speakers">
-                    <div class="featureIcon">
-                        <span><img src="assets/images/lecture.png" alt=""></span>
-                    </div>
-                    <div class="featureInnerContent">
-                        <p><strong>Great Speakers</strong></p>
-                        <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
-                    </div>
-                    <div class="featureBtn">
-                        <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
-                <div class="featureHoldedr Experience">
-                    <div class="featureIcon">
-                        <span><img src="assets/images/lecture.png" alt=""></span>
-                    </div>
-                    <div class="featureInnerContent">
-                        <p><strong>Experience</strong></p>
-                        <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
-                    </div>
-                    <div class="featureBtn">
-                        <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
-                <div class="featureHoldedr Networking">
-                    <div class="featureIcon">
-                        <span><img src="assets/images/lecture.png" alt=""></span>
-                    </div>
-                    <div class="featureInnerContent">
-                        <p><strong>Networking</strong></p>
-                        <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
-                    </div>
-                    <div class="featureBtn">
-                        <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
-                <div class="featureHoldedr Party">
-                    <div class="featureIcon">
-                        <span><img src="assets/images/lecture.png" alt=""></span>
-                    </div>
-                    <div class="featureInnerContent">
-                        <p><strong>Party</strong></p>
-                        <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.</p>
-                    </div>
-                    <div class="featureBtn">
-                        <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
+        <div class="imgBOx">
+            <img src="assets/images/2.jpg" alt="">
+            <div class="overlayer">
+                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
             </div>
         </div>
-    </section>
-
-    <section class="layoutSec">
-        <div class="layoutParent layout">
-            <div class="Imglayout layout"></div>
-            <div class="Contentlayout">
-                <h2 class="h2">Modern Marketing Summit Sydney 2018</h2>
-                <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat</p>
-                <button class="mainBtns">
-                    <span class="btn_text">Get Tickets</span>
-                </button>
+        <div class="imgBOx">
+            <img src="assets/images/3.jpg" alt="">
+            <div class="overlayer">
+                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
             </div>
         </div>
-    </section>
-
-    <section class="todayPer">
-        <div class="container">
-            <div class="perHeader">
-                <p class="subTittle">SPEAKERS</p>
-                <h2>Todays Performers</h2>
-            </div>
-            <div class="perContent">
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-1.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Dale Marke</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-2.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Natisha Decoux</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-3.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Adolfo Plahs</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-4.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Mitchell Hegg</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-5.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Kenyetta Lesley</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-6.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Shelly Verghese</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-7.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Kenyetta Lesley</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="perHolder">
-                    <div class="imgBox">
-                        <a href="#"><img class="perHolderSpeaker" src="assets/images/speaker-8.jpg" alt=""></a>
-                    </div>
-                    <div class="speakerInfo">
-                        <p><strong>Shelly Verghese</strong></p>
-                        <p>Event Manager</p>
-                    </div>
-                    <div class="speakerLink">
-                        <ul class="linkList">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a class="pinterst" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="imgBOx">
+            <img src="assets/images/5.jpg" alt="">
+            <div class="overlayer">
+                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
             </div>
         </div>
-    </section>
-
-    <section class="accrodianSection">
-        <div class="container">
-            <div class="accHeader">
-                <p class="subTittle">FAQ'S</p>
-                <h2 class="h2">General Questions</h2>
+        <div class="imgBOx">
+            <img src="assets/images/2.jpg" alt="">
+            <div class="overlayer">
+                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
             </div>
-            <div class="accrodainContentParent">
-                <div class="accrodianContent accrodianContentLeft">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is Cohousing?
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Can we change the design?
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                How is the privacy issues?
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="accrodianContent accrodianContentRight">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightOne" aria-expanded="true" aria-controls="collapseRightOne">
-                                What is Cohousing?
-                            </button>
-                          </h2>
-                          <div id="collapseRightOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightTwo" aria-expanded="false" aria-controls="collapseRightTwo">
-                                Can we change the design?
-                            </button>
-                          </h2>
-                          <div id="collapseRightTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightThree" aria-expanded="false" aria-controls="collapseRightThree">
-                                How is the privacy issues?
-                            </button>
-                          </h2>
-                          <div id="collapseRightThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor amet consectur adipicing elit eiusmod tempor incididunt ut labore dolore magna aliqua.enim minim veniam quis nostrud exercitation ullamco laboris.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+        </div> 
+        <div class="imgBOx">
+            <img src="assets/images/5.jpg" alt="">
+            <div class="overlayer">
+                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section class="newsLetter">
+    <div class="container">
+        <div class="newsLetterContent text-center">
+            <div class="newsLetterLogo">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="newsLetterTittle">
+                <h2 class="h2">Subscribe our newslatter</h2>
+            </div>
+            <div class="newsLetterDescrip">
+                <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm
+                    tempor incididunt ut labore dolore magna.</p>
+            </div>
+            <div class="newsLetterInput">
+                <input type="text" placeholder="Your Email">
+                <button><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- <button class="mainBtns">
         <span class="btn_text">Get Tickets</span>
     </button> -->
 
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/mmenu-light.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/unpkg.com_isotope-layout@3.0.6_dist_isotope.pkgd.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/mmenu-light.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/unpkg.com_isotope-layout@3.0.6_dist_isotope.pkgd.min.js"></script>
+<script src="assets/js/main.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

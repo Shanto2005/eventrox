@@ -103,6 +103,8 @@ $headingColor: #1e1f36;
 $skyblue: #1c94d2;
 $meganda: #682372;
 $lightGreen: #40CBB4;
+$yellow: #FFC20B;
+$lightBlue: #1d95d2;
 
 
 
@@ -173,12 +175,8 @@ h4,
 .h4 {
     font-size: 16px;
 
-    @include minwidth(768px) {
-        font-size: 16px;
-    }
-
     @include minwidth(1200px) {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
@@ -471,63 +469,66 @@ header {
     }
 }
 
-.search_block {
-    opacity: 0;
-    text-align: center;
-    height: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -41px;
-    margin-left: -150px;
-
-    &.visible {
-        opacity: 1;
-        height: auto;
-        .search_box {
+.headerSearchModal{
+    .search_block {
+        opacity: 0;
+        text-align: center;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -41px;
+        margin-left: -150px;
+    
+        &.visible {
             opacity: 1;
+            height: auto;
+            .search_box {
+                opacity: 1;
+                top: 0;
+                transform: scale(1);
+            }
+        }
+        .overlayer {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
             top: 0;
-            transform: scale(1);
+            left: 0;
+            height: 100%;
+            width: 100%;
         }
     }
-    .overlayer {
-        background-color: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+    
+    .search_box {
+        background-color: #fcfaee;
+        box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        opacity: 0;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        top: -120px;
+        transform: scale(1.05);
+        transition: all 0.4s ease 0s;
+        z-index: 10;
+        .search_input {
+            border-radius: 5px;
+            margin-bottom: 0;
+        }
+        .search_icon {
+            background-color: transparent;
+            border: medium none;
+            color: $purple2;
+            font-size: 16px;
+            line-height: 1;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
 
-.search_box {
-    background-color: #fcfaee;
-    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    opacity: 0;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    top: -120px;
-    transform: scale(1.05);
-    transition: all 0.4s ease 0s;
-    z-index: 10;
-    .search_input {
-        border-radius: 5px;
-        margin-bottom: 0;
-    }
-    .search_icon {
-        background-color: transparent;
-        border: medium none;
-        color: $purple2;
-        font-size: 16px;
-        line-height: 1;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
 
 
 .bannerSection{
@@ -1102,5 +1103,676 @@ header {
         content: "\f068";
         font-weight: 900;
         font-family: "Font Awesome 6 Free";
+    }
+}
+
+
+.SchedulePlan{
+    background-color: #FAFAFA;
+    padding: 40px 0px ;
+    @include minwidth(768px){
+        padding: 60px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 100px 0px;
+    }
+    .SchedulePlanHeading{
+        margin-bottom: 20px;
+        @include minwidth(992px){
+            margin-bottom: 40px;
+        }
+    }
+    .ScheduleBtn{
+        position: relative;
+        padding-top: 30px;
+        background-color: unset;
+        border: 1px solid #dddddd;
+        height: 100%;
+    }
+    .nav-pills{
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+    .lightGrn{
+        .day{
+            background-color: $lightGreen;
+        }
+        .DateBox{
+            strong{
+                color: $lightGreen;
+            }
+        }
+        .mnth{
+            color: $lightGreen;
+        }
+        .date{
+            color: $lightGreen;
+        }
+    }
+    .purple{
+        .day{
+            background-color: $purple;
+        }
+        .DateBox{
+            strong{
+                color: $purple;
+            }
+        }
+        .mnth{
+            color: $purple;
+        }
+        .date{
+            color: $purple;
+        }
+    }
+    .pink{
+        .day{
+            background-color: $pink;
+        }
+        .DateBox{
+            strong{
+                color: $pink;
+            }
+        }
+        .mnth{
+            color: $pink;
+        }
+        .date{
+            color: $pink;
+        }
+    }
+    .day{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        color: $white;
+        background-color: $yellow;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 0px 30px 30px 0px;
+    }
+    }
+    .DateBox{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        p{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin-bottom: 0;
+        }
+        strong{
+            font-size: 38px;
+            color: $yellow;
+        }
+    .mnth{
+        color: $yellow;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .year{
+        color: $purple2;
+    }
+}
+.ScheduleContent{
+    .contentBox{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 40px;
+        margin-top: 40px;
+    }
+    .innerBox{
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 30px;
+        border-radius: 15px;
+        @include minwidth(768px){
+            width: 48%;
+        }
+        a{
+            color: $purple2;
+            transition: 0.3s;
+            width: fit-content;
+            text-decoration: none;
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+    .thumb{
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid $yellow;
+        }
+    }
+    .speakerinfo{
+        line-height: 1.4;
+        strong{
+            color: $purple2;
+        }
+        P{
+            color: #777777;
+            font-size: 12px;
+        }
+    }
+    .mainBtns{
+        background-color: $yellow;
+        &:hover{
+            .btn_text{
+                color: $yellow;
+            }
+        }
+    }
+    .lightGntBox{
+        .mainBtns{
+            background-color: $lightGreen;
+            &:hover{
+                .btn_text{
+                    color: $lightGreen;
+                }
+            }
+        }
+        .thumb{
+            img{
+                border: 2px solid $lightGreen;
+            }
+        }
+        a{
+            &:hover{
+                color: $lightGreen;
+            }
+        }
+    }
+    .purpleBox{
+        .mainBtns{
+            background-color: $purple;
+            &:hover{
+                .btn_text{
+                    color: $purple;
+                }
+            }
+        }
+        .thumb{
+            img{
+                border: 2px solid $purple;
+            }
+        }
+        a{
+            &:hover{
+                color: $purple;
+            }
+        }
+    }
+    .pinkBox{
+        .mainBtns{
+            background-color: $pink;
+            &:hover{
+                .btn_text{
+                    color: $pink;
+                }
+            }
+        }
+        .thumb{
+            img{
+                border: 2px solid $pink;
+            }
+        }
+        a{
+            &:hover{
+                color: $pink;
+            }
+        }
+    }
+}
+
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: unset;
+    border: 1px solid $yellow;
+    box-shadow: 0 0px 30px rgba(255,194,11,.30);
+}
+.nav-pills .lightGrn.active, .nav-pills .show>.lightGrn{
+    background-color: unset;
+    border: 1px solid $lightGreen;
+    box-shadow: 0 0px 30px rgba(64,203,180,.30);
+}
+.nav-pills .purple.active, .nav-pills .show>.purple{
+    background-color: unset;
+    border: 1px solid $purple;
+    box-shadow: 0 0px 30px rgba(76,53,169,.30);
+}
+.nav-pills .pink.active, .nav-pills .show>.pink{
+    background-color: unset;
+    border: 1px solid $pink;
+    box-shadow: 0 0px 30px rgba(230,39,90,.30);
+}
+
+
+.evenetroxApp{
+    background-color: #FAFAFA;
+    padding: 40px 0px ;
+    @include minwidth(768px){
+        padding: 60px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 100px 0px;
+    }
+    .appContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .appTextContent{
+        width: 100%;
+        @include minwidth(768px){
+            width: 48%;
+        }
+    }
+    .appImgContent{
+        width: 100%;
+        text-align: center;
+        @include minwidth(768px){
+            width: 48%;
+            text-align: end;
+        }
+        img{
+            @include maxwidth(767px){
+                width: 300px;
+            }
+        }
+    }
+}
+
+.eventHallDerac{
+    padding: 40px 0px ;
+    @include minwidth(768px){
+        padding: 60px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 100px 0px;
+    }
+    .dehHeader{
+        margin-bottom: 20px;
+        @include minwidth(922px){
+            margin-bottom: 40px;
+        }
+    }
+    .deh_content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .deh_map{
+        width: 100%;
+        @include minwidth(992px){
+            width: 48%;
+        }
+        iframe{
+            width: 100%;
+        }
+    }
+    .deh_tab{
+        width: 100%;
+        @include minwidth(992px){
+            width: 48%;
+        }
+        .tab-buttons {
+            display: flex;
+            justify-content: start;
+            gap: 5px;
+          }
+          
+          .tab-btn {
+            width: 20%;
+            color: $white;
+            font-weight: 600;
+            background-color: $lightBlue;
+            border: 1px solid #dddddd;
+            border-bottom: 0;
+            padding: 10px 0px;
+            transition: 0.3s ease;
+            &:hover{
+                background-color: $white;
+                color: $lightBlue;
+            }
+          }
+          .tab-btn.active {
+            background-color: $white;
+            color: $lightBlue;
+          }
+          
+          .content {
+            display: none;
+            box-shadow: 0 30px 20px rgba(0,0,0,.05);
+          }
+          .content.show {
+            display: flex;
+            gap: 14px;
+            background-color: $white;
+            border: 1px solid #ddd;
+            padding: 16px;
+        }
+        .content-title{
+            margin-bottom: 5px;
+            i{
+                color: $lightGreen;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }    
+    .userInfo{
+        padding-left: 0;
+        margin-bottom: 0;
+        li{
+            padding-left: 30px;
+            position: relative;
+            list-style:  none;
+            &::before{
+                position: absolute;
+                content: "\f007";
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $pink;
+                font-weight: 900;
+                font-family: "Font Awesome 6 Free";
+                font-size: 16px;
+            }
+            &:nth-child(2){
+                &::before{
+                    content: "\f095";
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    content: "\f0e0";
+                }
+            }
+        }
+        a{
+            transition: 0.3s;
+            text-decoration: none;
+            color: $textColor;
+            &:hover{
+                color: $pink;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+.conferanceBg{
+    background-image: url('../images/11.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0px ;
+    @include minwidth(768px){
+        padding: 60px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 100px 0px;
+    }
+    .tittle{
+        h2, .h2{
+            color: $white;
+            margin-bottom: 40px;
+        }
+    }
+    .subtittle{
+        p{
+            color: $yellow;
+        }
+    }
+}
+
+.conferanceGallery{
+    .imgBOx{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &:hover{
+            .overlayer{
+                visibility: visible;
+                border-radius: unset;
+                opacity: 0.9;
+                width: 100%;
+                height: 100%;
+            }
+            a{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .overlayer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 0%;
+        height: 0%;
+        transition: 0.6s;
+        background-color: $lightBlue;
+        opacity: 0;
+        a{
+            width: 0px;
+            height: 0px;
+            background-color: $pink;
+            color: $white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: 0.6s;
+        }
+    }
+    .slick-arrow{
+        width: 40px;
+        height: 40px;
+        background-color: $pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        &:hover{
+            background-color: $pink;
+        }
+        &:focus{
+            background-color: $pink;
+        }
+    }
+    .slick-next{
+        right: 10px;
+        @include minwidth(992px){
+            right: 50px;
+        }
+        &::before{
+            content: "\f0da";
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+        }
+    }
+    .slick-prev{
+        left: 10px;
+        @include minwidth(992px){
+            left: 50px;
+        }
+        &::before{
+            content: "\f0d9";
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+        }
+        z-index: 9;
+    }
+}
+
+
+.tickerChoos{
+    padding: 40px 0px ;
+    position: relative;
+    @include minwidth(768px){
+        padding: 60px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 100px 0px;
+    }
+    .container{
+        position: relative;
+        .dotCircle{
+            position: absolute;
+            top: 0;
+            right: -100px;
+            display: none;
+            @include minwidth(1400px){
+                display: block;
+            }
+        }
+        .dotBox{
+            display: none;
+            @include minwidth(1400px){
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: -100px;
+            }
+        }
+    }
+    .fullCircle{
+        display: none;
+        @include minwidth(1400px){
+            display: block;
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            opacity: 0.5;
+            z-index: -1;
+        }
+    }
+    .ticketContemt{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+        padding: 20px 0px;
+        @include maxwidth(991px){
+            overflow-x: auto;
+        }
+        @include minwidth(992px){
+            margin-top: 40px;
+        }
+    }
+    .ticletHolder{
+        box-shadow: 0 0 30px rgba(0,0,0,0.10);
+        border-radius: 20px;
+        padding: 20px;
+        @include maxwidth(991px){
+            min-width: 260px;
+        }
+        @include minwidth(992px){
+            width: 30%;
+            padding: 40px;
+        }
+    }
+    .ticketName{
+        p{
+            width: fit-content;
+            margin: auto;
+            font-size: 40px;
+            text-transform: uppercase;
+            border-bottom: 2px solid $textColor;
+        }
+    }
+    .ticketPrice{
+        p{
+            color: $pink;
+            font-size: 60px;
+            margin-top: 10px;
+        }
+    }
+    .ticketPackeg{
+        margin-bottom: 20px;
+        p{
+            padding: 5px;
+            margin-bottom: 0;
+            &:not(:last-child){
+                border-bottom: 1px dashed $textColor;
+            }
+        }
+    }
+}
+
+.newsLetter{
+    padding: 40px 0px ;
+    position: relative;
+    @include minwidth(768px){
+        padding: 60px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 100px 0px;
+    }
+    .newsLetterContent{
+        max-width: 700px;
+        margin: auto;
+    }
+    .newsLetterTittle{
+        margin: 20px 0px;
+    }
+    .newsLetterLogo{
+        i{
+            font-size: 40px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, rgba(76,53,169,1) 0%, rgba(242,4,135,1) 48%);
+            color: $white;
+            padding: 20px;
+            @include minwidth(992px){
+                font-size: 60px;
+                padding: 40px;
+            }
+        }
+    }
+    .newsLetterInput{
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 30px rgba(0,0,0,0.10), 0 0 30px rgba(0,0,0,0.10);
+        input{
+            border-radius: unset;
+            position: relative;
+            margin-bottom: 0;
+            border: unset;
+            &:focus{
+                border: unset;
+            }
+        }
+        button{
+            color: $purple2;
+            border: unset;
+            background-color: unset;
+            margin-right: 20px;
+            font-size: 18px;
+        }
     }
 }
