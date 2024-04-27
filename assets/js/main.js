@@ -118,43 +118,34 @@ function tabClicked(tab) {
 
 
 
-$('.gallerySlide').slick({
+
+
+
+$('.sponsorPerant').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         }
       }
     ]
-  });
+});

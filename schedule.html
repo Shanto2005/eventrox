@@ -1,0 +1,769 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/mmenu-light.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<header>
+    <div class="container">
+        <div class="header_content">
+            <div class="headerlogoBox">
+                <a href="index.html"><img src="assets/images/headerLogo.png" alt=""></a>
+            </div>
+            <div class="headerMenuBox">
+                <div class="mmenu_box d-flex d-lg-none column-gap-3">
+                    <div class="ssBtn d-none d-sm-block d-lg-none ms-0">
+                        <button class="mainBtns ms-0">
+                            <span class="btn_text">Get Tickets</span>
+                        </button>
+                    </div>
+                    <button type="button open_search" class="btn p-0 modalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <a href="#mntk_mmenu" class="mmenuButton fs-3" style="color: #fff;"><i
+                            class="fa-solid fa-bars"></i>
+                    </a>
+                    <nav id="mntk_mmenu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="subParents"><a href="aboutus.html">About</a>
+                                <ul class="subItem">
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="faqs.html">FAQ's</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="speakers.html">Speakers</a>
+                                <ul class="subItem">
+                                    <li><a href="speakers.html">Speakers</a></li>
+                                    <li><a href="speakersdetails.html">Speakers Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="subParents"><a href="schedule.html">Schedule</a>
+                                <ul class="subItem">
+                                    <li><a href="schedule.html">Schedule</a></li>
+                                    <li><a href="evenetDetails.html">Event Details</a></li>
+                                    <li><a href="buyTicket.html">Buy Ticket</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="dmnenu_box">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="subParents"><a href="aboutus.html">About</a>
+                            <ul class="subItem">
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="faqs.html">FAQ's</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="subParents"><a href="speakers.html">Speakers</a>
+                            <ul class="subItem">
+                                <li><a href="speakers.html">Speakers</a></li>
+                                <li><a href="speakersdetails.html">Speakers Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="subParents"><a href="schedule.html">Schedule</a>
+                            <ul class="subItem">
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="evenetDetails.html">Event Details</a></li>
+                                <li><a href="buyTicket.html">Buy Ticket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="ssBtn">
+                            <button type="button open_search" class="btn modalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <button class="mainBtns">
+                                <span class="btn_text">Get Tickets</span>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- headerSearchModal -->
+
+    <div class="headerSearchModal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="search_block">
+                        <div class="search_box">
+                        <div class="inner">
+                            <input type="text" name="search" id="search" class="search_input" autocomplete="off" placeholder="Search" />
+                            <button class="search_icon glyphicon glyphicon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="aboutBanner">
+        <div class="container">
+            <div class="bannerTittle">
+                <h1 class="h1">Schedule</h1>
+            </div>
+            <ul class="breadCumb">
+                <li><a href="#">Home</a></li>
+                <span></span>
+                <li>Schedule</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="SchedulePlan">
+        <div class="container">
+            <div class="SchedulePlanHeading text-center">
+                <p class="subTittle">ABOUT CONFERENCE</p>
+                <h2 class="h2">Schedule Plan</h2>
+            </div>
+            <div class="ScheduleContent">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active ScheduleBtn" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">
+                            <div class="day"><span>Day 1</span></div>
+                            <div class="DateBox">
+                                <p><strong>01</strong></p>
+                                <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ScheduleBtn lightGrn" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">
+                            <div class="day"><span>Day 2</span></div>
+                            <div class="DateBox">
+                                <p><strong>02</strong></p>
+                                <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ScheduleBtn purple" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">
+                            <div class="day"><span>Day 3</span></div>
+                            <div class="DateBox">
+                                <p><strong>03</strong></p>
+                                <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ScheduleBtn pink" id="pills-four-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four"
+                            aria-selected="false">
+                            <div class="day"><span>Day 4</span></div>
+                            <div class="DateBox">
+                                <p><strong>04</strong></p>
+                                <p><span class="mnth">Jan</span><span class="year">2023</span></p>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane tabContentParent fade show active yelloContent" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="contentBox">
+                            <div class="innerBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox lightGntBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox purpleBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox pinkBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tabContentParent fade lightContent" id="pills-profile" role="tabpanel"
+                        aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="contentBox">
+                            <div class="innerBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-5.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox lightGntBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-6.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox purpleBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-7.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox pinkBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-8.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tabContentParent fade purpleContent" id="pills-contact" role="tabpanel"
+                        aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="contentBox">
+                            <div class="innerBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-9.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox lightGntBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-10.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox purpleBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-11.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox pinkBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-12.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tabContentParent fade pinkCOntent" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab"
+                        tabindex="0">
+                        <div class="contentBox">
+                            <div class="innerBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-13.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox lightGntBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-14.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox purpleBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-15.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="innerBox pinkBox">
+                                <figure class="d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="assets/images/thumb-16.jpg" alt="">
+                                    </div>
+                                    <div class="speakerinfo ms-2">
+                                        <div class="name"><strong>Ashli Scroggy</strong></div>
+                                        <div class="designation">
+                                            <p class="mb-0">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h4 class="h4">
+                                    <a href="#">Modern Marketing Summit Sydney 2018</a>
+                                </h4>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt
+                                        labore et</p>
+                                </div>
+                                <div class="redMoreBtn">
+                                    <button class="mainBtns">
+                                        <span class="btn_text">Read More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+    
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="newsLetter">
+        <div class="container">
+            <div class="newsLetterContent text-center">
+                <div class="newsLetterLogo">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="newsLetterTittle">
+                    <h2 class="h2">Subscribe our newslatter</h2>
+                </div>
+                <div class="newsLetterDescrip">
+                    <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm
+                        tempor incididunt ut labore dolore magna.</p>
+                </div>
+                <div class="newsLetterInput">
+                    <input type="text" placeholder="Your Email">
+                    <button><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footerContent">
+                <div class="footerHolder compDescrip">
+                    <div class="footerCOntentTittle">
+                        <a href="index.html">
+                            <img src="assets/images/footerlogo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footerInnerCOntent">
+                        <p>We have very good strength in innovative technology and tools with over 35 years of experience. We makes long-term investments goal in global companies in different sectors, mainly in Europe and other countries.</p>
+                        <ul>
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a class="pinterest" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="slype" href="#"><i class="fa-brands fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerHolder useFullLink">
+                    <div class="footerCOntentTittle">
+                        <h4 class="h4">Useful Links</h4>
+                    </div>
+                    <div class="footerInnerCOntent">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerHolder contactUs">
+                    <div class="footerCOntentTittle">
+                        <h4 class="h4">Contact Us</h4>
+                    </div>
+                    <div class="footerInnerCOntent">
+                        <ul>
+                            <li>Mon - Fri: 09:00 - 18:00</li>
+                            <li><a href="tel:+1-345-5678-77">+1-345-5678-77</a></li>
+                            <li><a href="mailto:support@example.com">support@example.com</a></li>
+                            <li>13005 Greenville Avenue California, TX 70240</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerHolder insGallery">
+                    <div class="footerCOntentTittle">
+                        <h4 class="h4">Instagram Gallery</h4>
+                    </div>
+                    <div class="footerInnerCOntent">
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="assets/images/gw-1.jpg" alt="">
+                            </a>
+                            <div class="overlayer">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="assets/images/gw-2.jpg" alt="">
+                            </a>
+                            <div class="overlayer">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="assets/images/gw-3.jpg" alt="">
+                            </a>
+                            <div class="overlayer">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="assets/images/gw-4.jpg" alt="">
+                            </a>
+                            <div class="overlayer">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="assets/images/gw-5.jpg" alt="">
+                            </a>
+                            <div class="overlayer">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="assets/images/gw-6.jpg" alt="">
+                            </a>
+                            <div class="overlayer">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<a href="#" class="posButton"><i class="fa-solid fa-jet-fighter-up"></i></a>
+
+
+<!-- <button class="mainBtns">
+    <span class="btn_text">Get Tickets</span>
+</button> -->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mmenu-light.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/unpkg.com_isotope-layout@3.0.6_dist_isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

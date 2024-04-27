@@ -21,38 +21,75 @@
                 <a href="index.html"><img src="assets/images/headerLogo.png" alt=""></a>
             </div>
             <div class="headerMenuBox">
-                <div class="mmenu_box d-flex d-lg-none">
-                    <a href="#mntk_mmenu" class="mmenuButton fs-3" style="color: #fff;"><i
-                            class="fa-solid fa-bars"></i></a>
-                    <nav id="mntk_mmenu">
-                        <ul>
-                            <li class="flex dark"><a class="bttn-dark" href="index.html">Home</a></li>
-                            <li class="flex dark"><a class="bttn-dark" href="#">About</a></li>
-                            <li class="flex dark"><a class="bttn-dark" href="#">Speakers</a></li>
-                            <li class="flex dark"><a class="bttn-dark" href="#">Speakers</a></li>
-                            <li class="flex dark"><a class="bttn-dark" href="#">Blog</a></li>
-                            <li class="flex dark"><a class="bttn-dark" href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <button type="button open_search" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <div class="mmenu_box d-flex d-lg-none column-gap-3">
                     <div class="ssBtn d-none d-sm-block d-lg-none ms-0">
                         <button class="mainBtns ms-0">
                             <span class="btn_text">Get Tickets</span>
                         </button>
                     </div>
+                    <button type="button open_search" class="btn p-0 modalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <a href="#mntk_mmenu" class="mmenuButton fs-3" style="color: #fff;"><i
+                            class="fa-solid fa-bars"></i>
+                    </a>
+                    <nav id="mntk_mmenu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="subParents"><a href="aboutus.html">About</a>
+                                <ul class="subItem">
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="faqs.html">FAQ's</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="speakers.html">Speakers</a>
+                                <ul class="subItem">
+                                    <li><a href="speakers.html">Speakers</a></li>
+                                    <li><a href="speakersdetails.html">Speakers Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="subParents"><a href="schedule.html">Schedule</a>
+                                <ul class="subItem">
+                                    <li><a href="schedule.html">Schedule</a></li>
+                                    <li><a href="evenetDetails.html">Event Details</a></li>
+                                    <li><a href="buyTicket.html">Buy Ticket</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="dmnenu_box">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Speakers</a></li>
-                        <li><a href="#">Speakers</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li class="subParents"><a href="aboutus.html">About</a>
+                            <ul class="subItem">
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="faqs.html">FAQ's</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="subParents"><a href="speakers.html">Speakers</a>
+                            <ul class="subItem">
+                                <li><a href="speakers.html">Speakers</a></li>
+                                <li><a href="speakersdetails.html">Speakers Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="subParents"><a href="schedule.html">Schedule</a>
+                            <ul class="subItem">
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="evenetDetails.html">Event Details</a></li>
+                                <li><a href="buyTicket.html">Buy Ticket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <div class="ssBtn">
-                            <button type="button open_search" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button open_search" class="btn modalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                             <button class="mainBtns">
@@ -167,7 +204,7 @@
         <div class="featureContent">
             <div class="featureHoldedr Speakers">
                 <div class="featureIcon">
-                    <span><img src="assets/images/lecture.png" alt=""></span>
+                    <span><i class="fa-regular fa-message"></i></span>
                 </div>
                 <div class="featureInnerContent">
                     <p><strong>Great Speakers</strong></p>
@@ -179,7 +216,7 @@
             </div>
             <div class="featureHoldedr Experience">
                 <div class="featureIcon">
-                    <span><img src="assets/images/lecture.png" alt=""></span>
+                    <span><i class="fa-brands fa-searchengin"></i></span>
                 </div>
                 <div class="featureInnerContent">
                     <p><strong>Experience</strong></p>
@@ -191,7 +228,7 @@
             </div>
             <div class="featureHoldedr Networking">
                 <div class="featureIcon">
-                    <span><img src="assets/images/lecture.png" alt=""></span>
+                    <span><i class="fa-regular fa-gem"></i></span>
                 </div>
                 <div class="featureInnerContent">
                     <p><strong>Networking</strong></p>
@@ -203,7 +240,7 @@
             </div>
             <div class="featureHoldedr Party">
                 <div class="featureIcon">
-                    <span><img src="assets/images/lecture.png" alt=""></span>
+                    <span><i class="fa-solid fa-champagne-glasses"></i></span>
                 </div>
                 <div class="featureInnerContent">
                     <p><strong>Party</strong></p>
@@ -463,7 +500,7 @@
                         <div class="innerBox lightGntBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-2.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -488,7 +525,7 @@
                         <div class="innerBox purpleBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-3.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -513,7 +550,7 @@
                         <div class="innerBox pinkBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-4.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -543,7 +580,7 @@
                         <div class="innerBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-5.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -568,7 +605,7 @@
                         <div class="innerBox lightGntBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-6.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -593,7 +630,7 @@
                         <div class="innerBox purpleBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-7.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -618,7 +655,7 @@
                         <div class="innerBox pinkBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-8.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -648,7 +685,7 @@
                         <div class="innerBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-9.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -673,7 +710,7 @@
                         <div class="innerBox lightGntBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-10.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -698,7 +735,7 @@
                         <div class="innerBox purpleBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-11.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -723,7 +760,7 @@
                         <div class="innerBox pinkBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-12.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -753,7 +790,7 @@
                         <div class="innerBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-13.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -778,7 +815,7 @@
                         <div class="innerBox lightGntBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-14.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -803,7 +840,7 @@
                         <div class="innerBox purpleBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-15.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -828,7 +865,7 @@
                         <div class="innerBox pinkBox">
                             <figure class="d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb-1.jpg" alt="">
+                                    <img src="assets/images/thumb-16.jpg" alt="">
                                 </div>
                                 <div class="speakerinfo ms-2">
                                     <div class="name"><strong>Ashli Scroggy</strong></div>
@@ -1027,8 +1064,8 @@
                         <p>9.00 AM - 04.00 PM</p>
                         <ul class="userInfo">
                             <li>Dianne Ameter</li>
-                            <li><a href="#">+123 456 7890</a></li>
-                            <li><a href="#">sopport@Eventrox.com</a></li>
+                            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                            <li><a href="mailto:sopport@Eventrox.com">sopport@Eventrox.com</a></li>
                         </ul>
                       </div>
                     </div>
@@ -1151,41 +1188,59 @@
 </section>
 
 <section class="conferanceGallery">
-    <div class="gallerySlide">
-        <div class="imgBOx">
-            <img src="assets/images/1.jpg" alt="">
-            <div class="overlayer">
-                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+    <div class="container">
+        <div class="conferance text-center">
+            <p class="subTittle">Comferance</p>
+            <h2>Out Comferance</h2>
+        </div>
+        <div class="gallerySlide">
+            <div class="gallery">
+                <img src="assets/images/1.jpg" alt="">
+                <img src="assets/images/2.jpg" alt="">
+                <img src="assets/images/3.jpg" alt="">
+                <img src="assets/images/4.jpg" alt="">
+                <img src="assets/images/5.jpg" alt="">
+                <img src="assets/images/6.jpg" alt="">
+                <img src="assets/images/7.jpg" alt="">
+                <img src="assets/images/8.jpg" alt="">
+                <img src="assets/images/s9.jpg" alt="">
+                <img src="assets/images/10.jpg" alt="">
+                <img src="assets/images/s11.jpg" alt="">
+                <img src="assets/images/12.jpg" alt="">
             </div>
         </div>
-        <div class="imgBOx">
-            <img src="assets/images/2.jpg" alt="">
-            <div class="overlayer">
-                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+    </div>
+</section>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <img id="imgModal">
+        <button class="prev" id="prevBtn">&lt;</button>
+        <button class="next" id="nextBtn">&gt;</button>
+    </div>
+</div>
+
+<section class="ourSponsor">
+    <div class="container">
+        <div class="sponsorPerant">
+            <div class="sponsorChild">
+                <a href="#"><img src="assets/images/2-3.png" alt=""></a>
             </div>
-        </div>
-        <div class="imgBOx">
-            <img src="assets/images/3.jpg" alt="">
-            <div class="overlayer">
-                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+            <div class="sponsorChild">
+                <a href="#"><img src="assets/images/2-4.png" alt=""></a>
             </div>
-        </div>
-        <div class="imgBOx">
-            <img src="assets/images/5.jpg" alt="">
-            <div class="overlayer">
-                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+            <div class="sponsorChild">
+                <a href="#"><img src="assets/images/2-5.png" alt=""></a>
             </div>
-        </div>
-        <div class="imgBOx">
-            <img src="assets/images/2.jpg" alt="">
-            <div class="overlayer">
-                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+            <div class="sponsorChild">
+                <a href="#"><img src="assets/images/2-6.png" alt=""></a>
             </div>
-        </div> 
-        <div class="imgBOx">
-            <img src="assets/images/5.jpg" alt="">
-            <div class="overlayer">
-                <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+            <div class="sponsorChild">
+                <a href="#"><img src="assets/images/2-7.png" alt=""></a>
+            </div>
+            <div class="sponsorChild">
+                <a href="#"><img src="assets/images/2-8.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -1254,8 +1309,8 @@
                 <div class="footerInnerCOntent">
                     <ul>
                         <li>Mon - Fri: 09:00 - 18:00</li>
-                        <li><a href="#">+1-345-5678-77</a></li>
-                        <li><a href="#">support@example.com</a></li>
+                        <li><a href="tel:+1-345-5678-77">+1-345-5678-77</a></li>
+                        <li><a href="mailto:support@example.com">support@example.com</a></li>
                         <li>13005 Greenville Avenue California, TX 70240</li>
                     </ul>
                 </div>
@@ -1319,6 +1374,8 @@
     </div>
 </footer>
 
+<a href="#" class="posButton"><i class="fa-solid fa-jet-fighter-up"></i></a>
+
 
     <!-- <button class="mainBtns">
         <span class="btn_text">Get Tickets</span>
@@ -1335,6 +1392,52 @@
 <script>
     AOS.init();
 </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("myModal");
+    var images = document.querySelectorAll(".gallery img");
+    var modalImg = document.getElementById("imgModal");
+    var prevBtn = document.getElementById("prevBtn");
+    var nextBtn = document.getElementById("nextBtn");
+    var currentIndex;
+
+    function openModal(index) {
+        modal.style.display = "block";
+        modalImg.src = images[index].src;
+        currentIndex = index;
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        modalImg.src = images[currentIndex].src;
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        modalImg.src = images[currentIndex].src;
+    }
+
+    images.forEach(function(image, index) {
+        image.addEventListener("click", function() {
+            openModal(index);
+        });
+    });
+
+    document.querySelector(".close").addEventListener("click", closeModal);
+    prevBtn.addEventListener("click", prevImage);
+    nextBtn.addEventListener("click", nextImage);
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+});
+
+    </script>
 </body>
 
 </html>
